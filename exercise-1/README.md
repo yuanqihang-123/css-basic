@@ -2,7 +2,7 @@
 
 ### 完成下列选择题，请将答案写到每题后面括号里
 
-1.在下列选择器中，哪一个代表 section class 里面的所有 title class? ( )
+1.在下列选择器中，哪一个代表 section class 里面的所有 title class? ( A )
 
 A <lable>.section .title {}</lable>  
 B <lable>.section.title {}</lable>  
@@ -10,7 +10,7 @@ C <lable>.section, .title {}</lable>
 D <lable>.section > .title {}</lable>  
 
 
-2.在下列选择器中，哪一个代表 section class 内部紧邻的 title class? ( )
+2.在下列选择器中，哪一个代表 section class 内部紧邻的 title class? ( D )
 
 A <lable>.section .title {}</lable>  
 B <lable>.section.title {}</lable>   
@@ -18,7 +18,7 @@ C <lable>.section, .title {}</lable>
 D <lable>.section > .title {}</lable>  
 
 
-3.在下列选择器中，哪一个代表同一个元素同时拥有 section 和 title 两个class? ( )
+3.在下列选择器中，哪一个代表同一个元素同时拥有 section 和 title 两个class? ( B )
 
 A <lable>.section .title {}</lable>  
 B <lable>.section.title {}</lable>   
@@ -27,7 +27,7 @@ D <lable>.section > .title {}</lable>
 
 
 
-4.在下列选择器中，哪一个代表 section 和 title 两个class 设置相同样式? ( )
+4.在下列选择器中，哪一个代表 section 和 title 两个class 设置相同样式? ( C )
 
 A <lable>.section .title {}</lable>  
 B <lable>.section.title {}</lable>   
@@ -36,13 +36,13 @@ D <lable>.section > .title {}</lable>
 
 
 
-5.在下列CSS选择器中，优先级从高到低是：( )
+5.在下列CSS选择器中，优先级从高到低是：( 4 )  
 ```
 <div class="section">
     <h1 id="title" class="title">title</h1>
 </div>
 
-A)  .section .title { color:red; }
+A)  .section .title { color:red; } 
 B)  #title { color:green; }
 C)  .title { color:yellow !important; }
 D)  .section > h1 { color:blue; }
@@ -52,7 +52,17 @@ D)  .section > h1 { color:blue; }
 3)  <lable> D > B > A > C</lable>  
 4)  <lable> 以上都不对 </lable>  
 
-  
+`B>A>D>C`
+
+> 比较规则: 
+>
+> 1. 如果有内联的style则优先级最高
+> 2. 没有内联,则ID选择器多的优先级高
+> 3. id选择器一样多,则类选择器多(或属性选择器,伪类)的优先级高
+> 4. 类选择器一样多,则标签选择器多(或伪元素)的优先级高
+>
+> [深入理解css选择器优先级](https://juejin.im/post/6844903709772611592)
+
   
 ## 本练习知识点
 

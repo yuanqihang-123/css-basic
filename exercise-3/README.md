@@ -7,7 +7,7 @@
 **注意：不要修改或删除任何现有的HTML和CSS代码**
 
 - 设 `#banner` 高度为350px.
-- 给 `h1` 添加 border style, 样式参考mockup.
+- 给 `h1` 添加 border style, 样式参考mockup.  (solid)
 - 设置 `h3` border 样式参考mockup.
 - 设置 `.navigation li` elements to have 10 pixels of padding. 
 - 设置 `.share a` elements to have 14 pixels of padding.
@@ -35,3 +35,7 @@
 - `margin: 0 auto` horizontally centers an element inside of its parent content area, if it has a width.
 - The `overflow` property can be set to `display`, `hide`, or `scroll`, and dictates how HTML will render content that overflows its parent’s content area.
 - The `visibility` property can hide or show elements.
+
+> - 为什么`margin: 0 auto`是在父区域内水平居中?
+>
+>   根据简写，这个意思是margin的上下为0px，左右为自动，所以是水平居中

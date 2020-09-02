@@ -42,10 +42,10 @@ D <lable>.section > .title {}</lable>
     <h1 id="title" class="title">title</h1>
 </div>
 
-A)  .section .title { color:red; } 
-B)  #title { color:green; }
-C)  .title { color:yellow !important; }
-D)  .section > h1 { color:blue; }
+A)  .section .title { color:red; } (0,2,0)
+B)  #title { color:green; } (1,0,0)
+C)  .title { color:yellow !important; } (0,1,0)
+D)  .section > h1 { color:blue; } (0,1,1)
 ```
 1)  <lable> B > C > D > A </lable>   
 2)  <lable> C > B > A > D </lable>    
@@ -60,6 +60,8 @@ D)  .section > h1 { color:blue; }
 > 2. 没有内联,则ID选择器多的优先级高
 > 3. id选择器一样多,则类选择器多(或属性选择器,伪类)的优先级高
 > 4. 类选择器一样多,则标签选择器多(或伪元素)的优先级高
+> 
+> 实在不知道,直接把css样式复制到vscode中,鼠标悬停即可看出优先级.
 >
 > [深入理解css选择器优先级](https://juejin.im/post/6844903709772611592)
 

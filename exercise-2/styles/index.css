@@ -13,12 +13,19 @@ body {
 }
 
 h1 {
+    text-transform: uppercase;
+    text-align: center;
+
+    font-family: Georgia;
     color: #fff;
     font-size: 2em;
     width: 100%;
 }
 
 h2 {
+    text-transform: capitalize;
+    font-family: Georgia;
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.5);
     font-weight: 100;
@@ -29,19 +36,35 @@ h2 {
 }
 
 p {
+    
+    font-size: 18px;
+    font-family: Helvetica;
+
     color: AliceBlue;
     line-height: 1.3em;
     text-align: left;
     width: 100%;
 }
 
+/* 伪元素 */
+p::first-line {
+    font-weight: bold;
+}
+
 .image {
+    background-image: url("../img/background-img.jpg");
+
     background-size: cover;
     background-position: center;
     height: 300px;
 }
 
 .caption {
+    background-color: #fff;
+    color: black;
+    opacity: 0.75;
+    font-style: italic;
+
     display: block;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
@@ -53,3 +76,7 @@ p {
     width: 60%;
 }
 
+.caption a:hover{
+    text-decoration: none;
+    color: purple;
+}
